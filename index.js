@@ -30,7 +30,7 @@ function delMacska(req,res){
 
 function indexof(id){
     let i=0;while(i<macskak.length &&   macskak[i].id != id)i++;
-    if(I<macskak.length) return i;else return -1;
+    if(i<macskak.length) return i;else return -1;
 }
 
 app.get("/", (req,res) => res.send("<h1>Macskák v1.0.0</h1>"))
