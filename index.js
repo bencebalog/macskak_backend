@@ -20,7 +20,7 @@ function addMacska(req,res){
 }
 function delMacska(req,res){
     if( req.params.id ){
-        let i = indexof(id);
+        let i = indexof(req.params.id);
         if(i!=-1){
             const macska = macskak.splice(i,1)
             res.send(macska[0]);
